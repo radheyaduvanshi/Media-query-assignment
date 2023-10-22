@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        .ImageGallery{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+        }
+        @media(max-width:800px){
+            .ImageGallery{grid-template-columns: repeat(2,1fr);}
+        }
+        @media(max-width:500px){
+            .ImageGallery{grid-template-columns: repeat(1,1fr);}
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="ImageGallery">
+        <div><img src="https://fastly.picsum.photos/id/480/200/300.jpg?hmac=-NCJbhpqFCFd17uR0DXt17Ccp5H073pZLLaStM6erZg" alt="img"></div>
+        <div><img src="https://fastly.picsum.photos/id/480/200/300.jpg?hmac=-NCJbhpqFCFd17uR0DXt17Ccp5H073pZLLaStM6erZg" alt="img"></div>
+        <div><img src="https://fastly.picsum.photos/id/480/200/300.jpg?hmac=-NCJbhpqFCFd17uR0DXt17Ccp5H073pZLLaStM6erZg" alt="img"></div>
+
+    </div>
+</body>
+</html>
